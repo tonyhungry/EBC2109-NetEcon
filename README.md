@@ -1,8 +1,8 @@
 # EBC2109-NetEcon
 
-Resources for the course: EBC2109 Network Economics at the School of Business and Economics, Maastricht University.
+Resources for the course: EBC2109 Network Economics at the School of Business and Economics, Maastricht University. This course is taught using R.
 
-In this repository, you can find some of the slides I've used for the tutorials as well as some sample codes where the students have looked at.
+In this repository, you can find some of the slides I've used for the tutorials as well as some sample codes where the students have looked at. Please note, this repo is under heavy construction.
 
 **[Core Text Recommendation]**
 
@@ -17,3 +17,14 @@ In this repository, you can find some of the slides I've used for the tutorials 
 **[Amazing Links]**
 
 -   As always, this awesome list: <https://github.com/briatte/awesome-network-analysis>
+-   For plotting networks using igraph: <https://kateto.net/network-visualization>
+
+**[Main R Packages Used in this Course]**
+
+-   *Tidyverse* suite of packages: <https://www.tidyverse.org>
+
+-   *igraph*: <https://igraph.org/r/>
+
+**[Network Science Tutorials]**
+
+-   From Katya Ognyanova: <https://kateto.net/tutorials/>
