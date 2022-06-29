@@ -10,6 +10,8 @@ In this repository, you can find some of the slides I've used for the tutorials 
 
 -   *Networks* - Mark Newman, Oxford University Press. ISBN: 9780198805090.
 
+-   *Linked* - Alberto-László Barabási. Perseus Books. ISBN: 9780738206677.
+
 #### Very Good Lecture Slides
 
 -   From Giorgio Fagiolo \> Teaching \> Economic Networks: Theory and Empirics: <https://sites.google.com/view/giorgiofagiolo/home#h.p_3wLFg28TkYQH>
@@ -28,3 +30,7 @@ In this repository, you can find some of the slides I've used for the tutorials 
 #### Network Science Tutorials
 
 -   From Katya Ognyanova: <https://kateto.net/tutorials/>
+
+#### Data Analysis in R
+
+-   From Oscar Torres-Reyna: <https://www.princeton.edu/~otorres/>
