@@ -100,35 +100,3 @@ V(p1_students)$age = p1_info$Age
 V(p1_students)$country = as.factor(p1_info$Country)
 
 plot(p1_students, vertex.color = V(p1_students)$gender,edge.curved=.3,main="Presentation Team 1", vertex.label.cex=0.5, vertex.label.family="sans",vertex.size = 6)
-
-#### Correlations ####
-# Between two continuous variables
-cor(eigen_centrality(students)$vector,V(students)$age)
-
-# Between multiple continuous variables
-eig = eigen_centrality(students)$vector
-clos = closeness(students)
-deg = degree(students)
-age = V(students)$age
-
-df = data.frame(eig,clos,age,deg)
-cor(df)
-
-# Between a dummy and a continuous
-cor.test(V(students)$gender,V(students)$age) # between a dummy variable and a continuous
-# Totally nonsensical. According to the Pearson's product-moment correlation, the correlation between gender and age is 0.25, however because of the p-value, which is 0.359, the correlation generated does not 
-
-# Between a categorical variables (multiple categories) and continuous
-kruskal.test(age,V(students)$country)
-# As the p-value is above any significant alpha levels, we can conclude that there are no statically significant difference between different countries and age.
-
-# A finer multiple pairwise comparison between groups
-pairwise.wilcox.test(age,V(students)$country,p.adjust.method = "BH")
-# all of these values are 1, which means that the p-value for all of these different pairs are 1. This means that no statistically significant difference could be observed between age and the country that they are from. 
-
-table(V(students)$country)
-
-# For analysis of bipartite network as a whole, please have a look here: https://rpubs.com/pjmurphy/317838 
-# Otherwise, if you just use each of the projections, then things we have done previously would easily apply.
-
-# tkplot(students)
